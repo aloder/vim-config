@@ -26,7 +26,8 @@ let g:deoplete#sources#ternjs#filetypes = [
 	\ 'jsx',
 	\ 'javascript.jsx',
 	\ 'vue',
-	\ 'javascript'
+	\ 'javascript',
+	\	'js'
 	\ ]
 
 let g:deoplete#sources#ternjs#timeout = 3
@@ -86,7 +87,7 @@ call deoplete#custom#option('omni_patterns', {
 " Ranking and Marks " {{{
 " Default rank is 100, higher is better.
 call deoplete#custom#source('omni',          'mark', '<omni>')
-call deoplete#custom#source('flow',          'mark', '<flow>')
+" call deoplete#custom#source('flow',          'mark', '<flow>')
 call deoplete#custom#source('padawan',       'mark', '<php>')
 call deoplete#custom#source('tern',          'mark', '<tern>')
 call deoplete#custom#source('go',            'mark', '<go>')
@@ -103,7 +104,7 @@ call deoplete#custom#source('member',        'mark', '<member>')
 call deoplete#custom#source('padawan',       'rank', 660)
 call deoplete#custom#source('go',            'rank', 650)
 call deoplete#custom#source('vim',           'rank', 640)
-call deoplete#custom#source('flow',          'rank', 630)
+" call deoplete#custom#source('flow',          'rank', 630)
 call deoplete#custom#source('TernJS',        'rank', 620)
 call deoplete#custom#source('jedi',          'rank', 610)
 call deoplete#custom#source('omni',          'rank', 600)

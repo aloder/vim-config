@@ -59,7 +59,7 @@ function! s:defx_my_settings() abort
 	nnoremap <silent><buffer><expr> '      defx#do_action('toggle_select') . 'j'
 	nnoremap <silent><buffer><expr> *      defx#do_action('toggle_select_all')
 	nnoremap <silent><buffer><expr> <C-r>  defx#do_action('redraw')
-	nnoremap <silent><buffer><expr> <C-g>  defx#do_action('print')
+	" nnoremap <silent><buffer><expr> <C-g>  defx#do_action('print')
 
 	nnoremap <silent><buffer><expr> S  defx#do_action('toggle_sort', 'Time')
 	nnoremap <silent><buffer><expr> C

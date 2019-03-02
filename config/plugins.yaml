@@ -85,7 +85,7 @@
 - { repo: othree/jspc.vim, on_ft: [ javascript, jsx, javascript.jsx ] }
 - { repo: posva/vim-vue, on_ft: [ vue ]}
 - { repo: heavenshell/vim-jsdoc, on_ft: [ javascript, jsx, javascript.jsx ] }
-- { repo: jparise/vim-graphql, on_ft: [ javascript, jsx, javascript.jsx ] }
+- { repo: jparise/vim-graphql, on_ft: [ javascript, jsx, javascript.jsx, graphql, gql ] }
 - { repo: moll/vim-node, on_ft: [ javascript, jsx, javascript.jsx ] }
 - { repo: elzr/vim-json, on_ft: json }
 
@@ -341,7 +341,10 @@
     \     'syntax': 'markdown',
     \     'ext': '.md' }
     \ ]
-
+- repo: vim-airline/vim-airline
+  hook_add: |
+    let g:airline#extensions#tabline#enabled = 1
+    let g:airline_powerline_fonts = 1
 # ==========================================
 # Completion
 # ----------
@@ -531,5 +534,6 @@
   depends: vim-textobj-user
   on_map: { ox: <Plug> }
   hook_add: let g:textobj_function_no_default_key_mappings = 1
-
+- repo: junegunn/fzf.vim
+- repo: jodosha/vim-godebug
 #  vim: set ts=2 sw=2 tw=80 et :
